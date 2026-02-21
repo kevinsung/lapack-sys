@@ -15273,6 +15273,28 @@ unsafe extern "C" {
     );
 }
 unsafe extern "C" {
+    pub fn crot_(
+        n: *const i32,
+        CX: *mut __BindgenComplex<f32>,
+        incx: *const i32,
+        CY: *mut __BindgenComplex<f32>,
+        incy: *const i32,
+        c: *const f32,
+        s: *const __BindgenComplex<f32>,
+    );
+}
+unsafe extern "C" {
+    pub fn zrot_(
+        n: *const i32,
+        CX: *mut __BindgenComplex<f64>,
+        incx: *const i32,
+        CY: *mut __BindgenComplex<f64>,
+        incy: *const i32,
+        c: *const f64,
+        s: *const __BindgenComplex<f64>,
+    );
+}
+unsafe extern "C" {
     pub fn dsbev_(
         jobz: *const ::core::ffi::c_char,
         uplo: *const ::core::ffi::c_char,
